@@ -33,16 +33,18 @@
 
 <details><summary>Tap On Me For Environment Variable</summary>
 
-* `API_ID` - Get API ID From <a href="https://youtu.be/RdMY6Lqfi9w" target="/blank">Telegram Auth</a> 
-* `API_HASH` - Get API HASH From <a href="https://youtu.be/RdMY6Lqfi9w" target="/blank">Telegram Auth</a>
-* `BOT_TOKEN` - Get BOT TOKEN From <a href="https://youtu.be/aJILCCXfNVM" target="/blank">Bot Father</a>
-* `ADMIN` - Add Your User ID, If Multiple Is Use Space To Split
-* `LOG_CHANNEL` - Bot Logs Channel To Sending User Data & 4GB Premium Client To Use, Id Must Startswith -100 & Make Sure Bot Is Admin In This Channel
-* `DATABASE_URL` - Mongo Database URL From <a href="https://youtu.be/pMJpHoiu1go" target="/blank">Mongo DB</a>
-* `DATABASE_NAME`  - Your Mongo Database Name From Mongo DB (Optional)
-* `FORCE_SUBS` - Your Force Subscribe Channel Username Without @ (Optional)
-* `START_PIC` - Your Bot Start Command Pic (Optional)
-* `STRING_SESSION` - Premium 4GB Client Pyrogram v2 String Session(Optional).
+- `API_ID` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
+- `API_HASH` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
+- `BOT_TOKEN` : Get From [BotFather](https://youtu.be/rUEKDOSPFho)
+- `DB_URL` : Mongodb [Database](https://youtu.be/j8LIuM7vv18)
+- `ADMIN` : Your Telegram ID.
+- `PICS` - Your bot start image
+- `IS_FSUB` : True/False FSUB accordingly.
+- `FSUB_EXPIRE` : Your FSUB link expire time.
+- `AUTH_CHANNELS` : Your Public & Private FSUB channels IDs.
+- `AUTH_REQ_CHANNELS` : Your Private Request FSUB channels IDs.
+- `LOG_CHANNEL` - Your log channel id.
+
 </details>
 
 ### 😍 COMMANDS
