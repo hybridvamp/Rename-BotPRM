@@ -14,7 +14,7 @@ def normalize_ids(*items):
             ids.add(item)
     return ids
 
-BYPASS_IDS=normalize_ids(Config.ADMIN,Config.LOG_CHANNEL,Config.AUTH_CHANNELS,Config.AUTH_REQ_CHANNELS)
+BYPASS_IDS=normalize_ids(Config.ADMIN,Config.LOG_CHANNEL,Config.BIN_CHANNEL,Config.AUTH_CHANNELS,Config.AUTH_REQ_CHANNELS)
 
 class TechifyBots:
     def __init__(self):
