@@ -229,7 +229,7 @@ async def upload_doc(bot, update):
                  await digital_botz.set_used_limit(user_id, used_remove)
              return await rkn_processing.edit(text=f"Yᴏᴜʀ Cᴀᴩᴛɪᴏɴ Eʀʀᴏʀ Exᴄᴇᴩᴛ Kᴇyᴡᴏʀᴅ Aʀɢᴜᴍᴇɴᴛ ●> ({e})")             
     else:
-         caption = f"**{new_filename}**"
+         caption = f"**{new_filename}**\n\n**User:** {message.from_user.first_name}\n**User ID:** `{user_id}`"
     if (media.thumbs or c_thumb):
          # downloading thumbnail path
          try:
@@ -265,6 +265,7 @@ async def upload_doc(bot, update):
 
         from_chat = filw.chat.id
         mg_id = filw.id
+        await bot.copy_message(chat_id=Config.BIN_CHANNEL, from_chat_id=from_chat, message_id=mg_id)
         await asyncio.sleep(2)
         await bot.copy_message(update.from_user.id, from_chat, mg_id)
         await bot.delete_messages(from_chat, mg_id)
@@ -275,6 +276,7 @@ async def upload_doc(bot, update):
             ph_path, caption, duration, rkn_processing
         )
         if error:
+            await bot.copy_message(chat_id=Config.BIN_CHANNEL, from_chat_id=filw.chat.id, message_id=filw.id)
             if bot.premium and bot.uploadlimit:
                 used_remove = int(used) - int(media.file_size)
                 await digital_botz.set_used_limit(user_id, used_remove)
