@@ -20,6 +20,7 @@ class Config(object):
     PIC = os.environ.get("PIC", "https://i.ibb.co/YTk9gzhY/IMG-20250906-144306-804.jpg")
     ADMIN = int(os.environ.get("ADMIN", "1255023013"))
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", ""))
 
     # free upload limit 
     FREE_UPLOAD_LIMIT = 6442450944 # calculation 6*1024*1024*1024=results
